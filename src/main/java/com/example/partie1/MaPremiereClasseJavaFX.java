@@ -38,4 +38,3 @@ public class MaPremiereClasseJavaFX extends Application {
         primaryStage.show();
     }
 }
-//
