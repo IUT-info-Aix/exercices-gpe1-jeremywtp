@@ -1,8 +1,6 @@
 package com.example.partie1;
 
 import javafx.application.Application;
-import javafx.geometry.Insets;
-import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Hyperlink;
@@ -10,9 +8,10 @@ import javafx.scene.control.Separator;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.layout.HBox;
-import javafx.scene.layout.Priority;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import javafx.geometry.Pos;
+import javafx.scene.layout.Priority;
 
 public class VBoxAndHBoxApp extends Application {
 
@@ -23,10 +22,10 @@ public class VBoxAndHBoxApp extends Application {
         VBox vbox = new VBox();
 
 
-// Création du conteneur correspondant à la ligne de contrôle haut dessus du tableau
+        // Création du conteneur correspondant à la ligne de contrôle haut dessus du tableau
         HBox topControls = new HBox();
         topControls.setAlignment( Pos.BOTTOM_LEFT );
-        Button btnRefresh = new Button("REFRESH");
+        Button btnRefresh = new Button("Refresh");
 
         HBox topRightControls = new HBox();
         HBox.setHgrow(topRightControls, Priority.ALWAYS );
@@ -49,7 +48,6 @@ public class VBoxAndHBoxApp extends Application {
 
         // Création du bandeau en bas de la fenêtre
         HBox bottomControls = new HBox();
-        bottomControls.setAlignment(Pos.BOTTOM_RIGHT );
         Button btnClose = new Button("Close");
         bottomControls.getChildren().add( btnClose );
 
@@ -72,10 +70,6 @@ public class VBoxAndHBoxApp extends Application {
 
         // Affichage de la fenêtre
         primaryStage.show();
-
-        VBox.setMargin( topControls, new Insets(10.0d) );
-        VBox.setMargin( tblCustomers, new Insets(0.0d, 10.0d, 10.0d, 10.0d) );
-        VBox.setMargin( bottomControls, new Insets(10.0d) );
     }
 
     public static void main(String[] args) {
