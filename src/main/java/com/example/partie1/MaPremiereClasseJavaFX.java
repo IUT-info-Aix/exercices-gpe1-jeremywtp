@@ -6,7 +6,7 @@ import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
 public class MaPremiereClasseJavaFX extends Application {
-
+    
     public static void main(String[] args) {
         launch(args);
     }
@@ -15,8 +15,8 @@ public class MaPremiereClasseJavaFX extends Application {
     public void start(Stage primaryStage) {
         // Récupérer les arguments passés en ligne de commande
         Parameters params = getParameters();
-        int width = 300;
-        int height = 150;
+        int width = 500;
+        int height = 500;
 
         if (params.getRaw().size() > 0) {
             // Utiliser le premier argument passé en ligne de commande comme largeur de la fenêtre
@@ -27,8 +27,8 @@ public class MaPremiereClasseJavaFX extends Application {
             // Utiliser le deuxième argument passé en ligne de commande comme hauteur de la fenêtre
             height = Integer.parseInt(params.getRaw().get(1));
         }
-
-        // Créer une scène
+    
+        // Créer une scène 
         StackPane root = new StackPane();
         Scene scene = new Scene(root, width, height);
 
@@ -38,4 +38,5 @@ public class MaPremiereClasseJavaFX extends Application {
         primaryStage.show();
     }
 }
+
 //
