@@ -48,6 +48,7 @@ public class VBoxAndHBoxApp extends Application {
 
         // Création du bandeau en bas de la fenêtre
         HBox bottomControls = new HBox();
+        bottomControls.setAlignment(Pos.BOTTOM_RIGHT );
         Button btnClose = new Button("Close");
         bottomControls.getChildren().add( btnClose );
 
