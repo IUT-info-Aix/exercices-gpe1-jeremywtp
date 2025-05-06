@@ -12,6 +12,7 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import javafx.geometry.Pos;
 import javafx.scene.layout.Priority;
+import javafx.geometry.Insets;
 
 public class VBoxAndHBoxApp extends Application {
 
@@ -71,6 +72,10 @@ public class VBoxAndHBoxApp extends Application {
 
         // Affichage de la fenêtre
         primaryStage.show();
+
+        VBox.setMargin( topControls, new Insets(10.0d) );
+        VBox.setMargin( tblCustomers, new Insets(0.0d, 10.0d, 10.0d, 10.0d) );
+        VBox.setMargin( bottomControls, new Insets(10.0d) );
     }
 
     public static void main(String[] args) {
